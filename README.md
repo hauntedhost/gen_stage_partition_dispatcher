@@ -13,31 +13,55 @@ Four Consumers are started and subscribed to each available partition that simpl
 ```
 iex> Party.start
 :ok
-=== partition 1 received words: ["accusamus", "atque", "id", "corporis", "dolor"] ===
-=== partition 2 received words: ["nam"] ===
-=== partition 3 received words: ["tempora", "veniam", "sunt", "sit", "similique"] ===
-=== partition 1 received words: ["dolorem", "dolorem", "id", "eligendi", "eos"] ===
-=== partition 2 received words: ["quaerat", "officiis", "quis", "quidem"] ===
-=== partition 3 received words: ["voluptate"] ===
-=== partition 1 received words: ["dolorum", "fugiat", "est", "assumenda", "fuga"] ===
-=== partition 2 received words: ["placeat", "non", "reprehenderit"] ===
-=== partition 3 received words: ["veritatis", "temporibus"] ===
-=== partition 1 received words: ["et", "dolorem", "ad", "cumque", "hic"] ===
-=== partition 2 received words: ["qui", "quos"] ===
-=== partition 3 received words: ["vel"] ===
-=== partition 1 received words: ["eum", "aspernatur", "et", "ipsum", "explicabo"] ===
-=== partition 2 received words: ["necessitatibus", "qui", "ratione", "occaecati", "reprehenderit"] ===
-=== partition 3 received words: ["temporibus", "similique", "sint"] ===
-=== partition 1 received words: ["dolor", "adipisci", "est", "dolorem", "dolor"] ===
-=== partition 2 received words: ["officia", "quia"] ===
-=== partition 3 received words: ["ullam"] ===
-=== partition 3 received words: ["vel", "voluptate"] ===
-=== partition 1 received words: ["dolores", "at", "impedit", "est", "culpa"] ===
-=== partition 2 received words: ["nihil", "qui"] ===
-=== partition 1 received words: ["aspernatur", "et", "itaque", "dolore", "culpa"] ===
-=== partition 2 received words: ["necessitatibus"] ===
-=== partition 3 received words: ["velit", "ut", "voluptatem"] ===
-=== partition 1 received words: ["inventore", "aut", "aut", "cum", "eum"] ===
-=== partition 2 received words: ["quod", "quis", "quidem"] ===
-=== partition 3 received words: ["velit"] ===
+=== partition a_i received words: ["fuga", "exercitationem", "eligendi", "eum", "enim"] ===
+=== partition s_z received words: ["sunt", "ut", "ullam", "voluptatum"] ===
+=== partition j_r received words: ["molestiae"] ===
+=== partition a_i received words: ["autem", "cum", "est"] ===
+=== partition j_r received words: ["non", "quis", "maiores", "perspiciatis", "qui"] ===
+=== partition s_z received words: ["sequi", "ut", "veritatis", "tenetur"] ===
+=== partition a_i received words: ["blanditiis"] ===
+=== partition j_r received words: ["quas"] ===
+=== partition s_z received words: ["sed", "temporibus"] ===
+=== partition j_r received words: ["magnam", "quia", "quasi"] ===
+=== partition a_i received words: ["aspernatur"] ===
+=== partition a_i received words: ["iste", "dicta", "et", "et", "et"] ===
+=== partition j_r received words: ["necessitatibus", "necessitatibus", "quidem", "ratione", "quod"] ===
+=== partition s_z received words: ["voluptatem", "veniam", "voluptas"] ===
+=== partition a_i received words: ["autem", "corrupti", "enim", "consequuntur", "ea"] ===
+=== partition j_r received words: ["quasi"] ===
+=== partition s_z received words: ["voluptatem"] ===
+=== partition s_z received words: ["ut"] ===
+=== partition a_i received words: ["doloribus", "est", "dolores", "dolorum", "dicta"] ===
+=== partition j_r received words: ["quia", "nobis", "perspiciatis", "reiciendis", "repudiandae"] ===
+=== partition s_z received words: ["tempora"] ===
+=== partition a_i received words: ["id", "aut", "aut", "aut", "aut"] ===
+=== partition s_z received words: ["ut"] ===
+=== partition j_r received words: ["qui", "non", "quia", "rerum"] ===
+=== partition a_i received words: ["deserunt", "et", "facere", "aut", "eaque"] ===
+=== partition a_i received words: ["iusto", "aspernatur", "dolores", "incidunt", "harum"] ===
+=== partition s_z received words: ["vel", "voluptas"] ===
+=== partition j_r received words: ["quibusdam", "quis", "necessitatibus", "quod", "omnis"] ===
+=== partition a_i received words: ["et", "et", "explicabo", "est", "ipsum"] ===
+=== partition s_z received words: ["tempora"] ===
+=== partition j_r received words: ["natus"] ===
+=== partition a_i received words: ["consequatur", "corporis"] ===
+=== partition s_z received words: ["velit", "sint"] ===
+=== partition a_i received words: ["at"] ===
+=== partition a_i received words: ["deserunt", "enim"] ===
+=== partition j_r received words: ["quis", "mollitia", "mollitia", "praesentium", "nesciunt"] ===
+=== partition a_i received words: ["eum", "ex"] ===
+=== partition s_z received words: ["sint", "velit", "sed", "sunt"] ===
+=== partition j_r received words: ["laborum", "nisi", "non", "quia"] ===
+=== partition a_i received words: ["et", "dicta"] ===
+=== partition s_z received words: ["saepe", "vitae", "voluptatem"] ===
+=== partition s_z received words: ["vero", "vel"] ===
+=== partition a_i received words: ["in"] ===
+=== partition j_r received words: ["officiis", "rerum", "natus", "quisquam", "perferendis"] ===
+=== partition s_z received words: ["tempora", "voluptatem"] ===
+=== partition a_i received words: ["et", "dolorem", "facilis"] ===
+=== partition s_z received words: ["tempore"] ===
+=== partition j_r received words: ["qui"] ===
+=== partition a_i received words: ["id", "a"] ===
+=== partition j_r received words: ["qui", "quibusdam", "qui", "officiis", "pariatur"] ===
+=== partition s_z received words: ["voluptas", "ut"] ===
 ```

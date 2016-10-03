@@ -1,2 +1,2 @@
 %{"faker": {:hex, :faker, "0.7.0", "2c42deeac7be717173c78c77fb3edc749fb5d5e460e33d01fe592ae99acc2f0d", [:mix], []},
-  "gen_stage": {:git, "https://github.com/elixir-lang/gen_stage.git", "16337b94d16a21781658c562ac96221886e50194", []}}
+  "gen_stage": {:git, "https://github.com/elixir-lang/gen_stage.git", "1920fe1dfff1ff07001e97b89cb8b1428a25a049", []}}

@@ -21,22 +21,22 @@ defmodule Party.Producer do
   end
 
   def partitions_list do
-    [1, 2, 3, 4]
+    ~w(a_i j_r s_z other)a
   end
 
   def partition_by_first_letter(event) do
     partition = case first_char_downcase(event) do
-      c when c in ~w(a b c d e f g h i) -> 1
-      c when c in ~w(j k l m n o p q r) -> 2
-      c when c in ~w(s t u v w x y z)   -> 3
-      _                                 -> 4
+      c when c in ~w(a b c d e f g h i) -> :a_i
+      c when c in ~w(j k l m n o p q r) -> :j_r
+      c when c in ~w(s t u v w x y z)   -> :s_z
+      _                                 -> :other
     end
     {event, partition}
   end
 
   defp first_char_downcase(string) do
     string
-    |> String.downcase
     |> String.at(0)
+    |> String.downcase
   end
 end
