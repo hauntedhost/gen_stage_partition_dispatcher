@@ -17,28 +17,20 @@ defmodule Party.Producer do
 
   def handle_demand(demand, state) when demand > 0 do
     words = Enum.map(1..demand, fn(_) -> Faker.Lorem.word end)
-
-    IO.puts "=== handle_demand ==="
-    IO.inspect {:noreply, words, state}
-
     {:noreply, words, state}
   end
 
   def partitions_list do
-    ~w(one two three four)
+    [1, 2, 3, 4]
   end
 
   def partition_by_first_letter(event) do
     partition = case first_char_downcase(event) do
-      c when c in ~w(a b c d e f g h i) -> "one"
-      c when c in ~w(j k l m n o p q r) -> "two"
-      c when c in ~w(s t u v w x y z)   -> "three"
-      _                                 -> "four"
+      c when c in ~w(a b c d e f g h i) -> 1
+      c when c in ~w(j k l m n o p q r) -> 2
+      c when c in ~w(s t u v w x y z)   -> 3
+      _                                 -> 4
     end
-
-    IO.puts("=== partition_by_first_letter ===")
-    IO.inspect {event, partition}
-
     {event, partition}
   end
 

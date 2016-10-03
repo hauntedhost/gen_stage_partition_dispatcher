@@ -10,61 +10,34 @@ The Producer generates and returns demand-length lists of randomly generated wor
 
 Four Consumers are started and subscribed to each available partition that simply wait for words and output them.
 
-The problem is, Consumers never receive any events. 😞
-
 ```
-iex(1)> Party.start
-=== starting consumer for partition: "one" ===
-=== starting consumer for partition: "two" ===
-=== starting consumer for partition: "three" ===
-=== starting consumer for partition: "four" ===
+iex> Party.start
 :ok
-=== handle_demand ===
-{:noreply, ["qui", "reiciendis", "id", "sed", "sint"], nil}
-=== partition_by_first_letter ===
-{"qui", "two"}
-=== partition_by_first_letter ===
-{"reiciendis", "two"}
-=== partition_by_first_letter ===
-{"id", "one"}
-=== partition_by_first_letter ===
-{"sed", "three"}
-=== partition_by_first_letter ===
-{"sint", "three"}
-=== handle_demand ===
-{:noreply, ["ut", "sit", "voluptatibus", "voluptas", "soluta"], nil}
-=== partition_by_first_letter ===
-{"ut", "three"}
-=== partition_by_first_letter ===
-{"sit", "three"}
-=== partition_by_first_letter ===
-{"voluptatibus", "three"}
-=== partition_by_first_letter ===
-{"voluptas", "three"}
-=== partition_by_first_letter ===
-{"soluta", "three"}
-=== handle_demand ===
-{:noreply, ["sit", "quae", "quia", "non", "libero"], nil}
-=== partition_by_first_letter ===
-{"sit", "three"}
-=== partition_by_first_letter ===
-{"quae", "two"}
-=== partition_by_first_letter ===
-{"quia", "two"}
-=== partition_by_first_letter ===
-{"non", "two"}
-=== partition_by_first_letter ===
-{"libero", "two"}
-=== handle_demand ===
-{:noreply, ["reiciendis", "quisquam", "velit", "dolor", "ea"], nil}
-=== partition_by_first_letter ===
-{"reiciendis", "two"}
-=== partition_by_first_letter ===
-{"quisquam", "two"}
-=== partition_by_first_letter ===
-{"velit", "three"}
-=== partition_by_first_letter ===
-{"dolor", "one"}
-=== partition_by_first_letter ===
-{"ea", "one"}
+=== partition 1 received words: ["accusamus", "atque", "id", "corporis", "dolor"] ===
+=== partition 2 received words: ["nam"] ===
+=== partition 3 received words: ["tempora", "veniam", "sunt", "sit", "similique"] ===
+=== partition 1 received words: ["dolorem", "dolorem", "id", "eligendi", "eos"] ===
+=== partition 2 received words: ["quaerat", "officiis", "quis", "quidem"] ===
+=== partition 3 received words: ["voluptate"] ===
+=== partition 1 received words: ["dolorum", "fugiat", "est", "assumenda", "fuga"] ===
+=== partition 2 received words: ["placeat", "non", "reprehenderit"] ===
+=== partition 3 received words: ["veritatis", "temporibus"] ===
+=== partition 1 received words: ["et", "dolorem", "ad", "cumque", "hic"] ===
+=== partition 2 received words: ["qui", "quos"] ===
+=== partition 3 received words: ["vel"] ===
+=== partition 1 received words: ["eum", "aspernatur", "et", "ipsum", "explicabo"] ===
+=== partition 2 received words: ["necessitatibus", "qui", "ratione", "occaecati", "reprehenderit"] ===
+=== partition 3 received words: ["temporibus", "similique", "sint"] ===
+=== partition 1 received words: ["dolor", "adipisci", "est", "dolorem", "dolor"] ===
+=== partition 2 received words: ["officia", "quia"] ===
+=== partition 3 received words: ["ullam"] ===
+=== partition 3 received words: ["vel", "voluptate"] ===
+=== partition 1 received words: ["dolores", "at", "impedit", "est", "culpa"] ===
+=== partition 2 received words: ["nihil", "qui"] ===
+=== partition 1 received words: ["aspernatur", "et", "itaque", "dolore", "culpa"] ===
+=== partition 2 received words: ["necessitatibus"] ===
+=== partition 3 received words: ["velit", "ut", "voluptatem"] ===
+=== partition 1 received words: ["inventore", "aut", "aut", "cum", "eum"] ===
+=== partition 2 received words: ["quod", "quis", "quidem"] ===
+=== partition 3 received words: ["velit"] ===
 ```
